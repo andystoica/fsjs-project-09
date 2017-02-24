@@ -11,7 +11,6 @@
         $scope.categories = [];
         $scope.currentCategory = {};
 
-
         // Controller public methods
         $scope.isListEmpty = isListEmpty;
         $scope.filterByCategory = filterByCategory;
@@ -22,10 +21,12 @@
         dataService.getRecipes(function (res) {
             $scope.recipes = res.data;
         });
+
         // Get complete list of categories
         dataService.getCategories(function (res) {
             $scope.categories = res.data;
         });
+
 
 
         // Returns true if the list of recipes is empty

@@ -20,6 +20,7 @@
         });
 
 
+
         // Removeds the selected recipe from the list by
         // sending DELETE API call and redirect home
         function deleteRecipe(deleteId) {
