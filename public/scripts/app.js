@@ -5,11 +5,10 @@
         .module('app', ['ngRoute'])
         .factory('$exceptionHandler', exceptionHandler);
 
-    // Overrides exception handling functionaly by displaying
-    // the error message inside an alert window
+    // Overrides exception handling functionaly
     function exceptionHandler() {
         return function (error, cause) {
-            alert('Error: ' + error.message);
+            console.log('Error: ' + error.message);
         };
     }
 

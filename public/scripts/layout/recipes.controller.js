@@ -44,8 +44,7 @@
         // Removeds the selected recipe from the list and
         // sends DELETE API call
         function deleteRecipe(deleteId) {
-            $scope.recipes = $scope.recipes.filter(recipe => recipe._id !== deleteId);
-            dataService.deleteRecipe(deleteId);
+            $location.path('/delete/' + deleteId);
         }
 
         // Redirects to new recipe page

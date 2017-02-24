@@ -100,9 +100,22 @@ button {
 .flush-right {
   float: right; }
 
+.flush-right p {
+  padding-top: 10px;
+}
+
 .no-action-link:hover {
   cursor: pointer; }
 
 .pad-top {
   padding-top: 10px;
+}
+
+p > small {
+    color: red;
+    color: #bfbab4;
+}
+
+.confirm button {
+    margin-top: 17px;
 }

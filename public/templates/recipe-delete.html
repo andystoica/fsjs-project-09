@@ -1,0 +1,12 @@
+<div class="grid-100 row controls">&nbsp;</div>
+<div class="clear"></div>
+
+<div class="grid-100 row">
+  <div class="grid-70">
+    <p>{{recipe.name}}<br><small>{{recipe.description}}</small></p>
+  </div>
+  <div class="flush-right confirm">
+    <button ng-click="deleteRecipe(recipeId)">Delete</button>
+    <button ng-click="cancelDelete()"class="secondary">Cancel</button>
+  </div>
+</div>
