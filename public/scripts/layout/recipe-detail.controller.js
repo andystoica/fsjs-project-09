@@ -1,4 +1,3 @@
-
 (function (){
     'use strict';
 
@@ -63,7 +62,7 @@
 
 
         // Saves a new recipes or saves the changes to an existing one
-        // based on existence of the _id key
+        // based on existence of the _id key and redirects home
         function saveRecipe() {
             if ($scope.recipe._id) { // Editing an existing recipe
                 dataService.updateRecipe($scope.recipe);
