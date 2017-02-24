@@ -13,3 +13,12 @@ Your AngularJS SPA will be a “front end” or “client” application that co
 This project will push you to go beyond what is taught in the Angular Basics course. To complete this project, you'll need to use other resources, including but not limited to the official AngularJS documentation (see https://docs.angularjs.org/api). Learning how to ask the right questions and find answers is a key skill that all developers need to know.
 
 Your application will include two screens: a screen that displays a list of recipes and a detail screen that allows the user to add or edit recipes.
+
+## Usage
+~~~~
+npm install
+npm run db
+npm start
+
+Navigate to http://127.0.0.1:5000
+~~~~

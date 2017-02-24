@@ -8,7 +8,9 @@
     function RecipesController($scope, $location, dataService) {
         // Controller public state
         $scope.recipes = [];
-        $scope.categoris = [];
+        $scope.categories = [];
+        $scope.currentCategory = {};
+
 
         // Controller public methods
         $scope.isListEmpty = isListEmpty;
@@ -24,7 +26,6 @@
         dataService.getCategories(function (res) {
             $scope.categories = res.data;
         });
-
 
 
         // Returns true if the list of recipes is empty
